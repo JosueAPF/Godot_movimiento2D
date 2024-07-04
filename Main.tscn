@@ -34,25 +34,31 @@ smoothing_enabled = true
 
 [node name="bloque" type="RigidBody2D" parent="."]
 position = Vector2( 200, 127 )
+scale = Vector2( 0.5, 0.5 )
 mass = 1.02041
 gravity_scale = 0.0
 
 [node name="Sprite" type="Sprite" parent="bloque"]
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bloque"]
 position = Vector2( -0.5, 1 )
+scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 2 )
 
 [node name="bloque2" type="RigidBody2D" parent="."]
-position = Vector2( 281, 48 )
+position = Vector2( 246, 141 )
+scale = Vector2( 0.5, 0.5 )
 gravity_scale = 0.0
 
 [node name="Sprite" type="Sprite" parent="bloque2"]
+scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bloque2"]
 position = Vector2( -0.5, 1 )
+scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
