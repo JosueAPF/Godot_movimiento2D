@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://bloque_dinamico.gd" type="Script" id=3]
+[ext_resource path="res://tiempo_bloque.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.5, 31.5 )
@@ -32,21 +34,27 @@ limit_left = -200000000
 limit_top = -200000000
 smoothing_enabled = true
 
-[node name="bloque" type="RigidBody2D" parent="."]
-position = Vector2( 200, 127 )
+[node name="bloque_timer" type="RigidBody2D" parent="."]
+position = Vector2( 297, -24 )
 mass = 1.02041
 gravity_scale = 0.0
+script = ExtResource( 4 )
 
-[node name="Sprite" type="Sprite" parent="bloque"]
+[node name="Sprite" type="Sprite" parent="bloque_timer"]
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bloque"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloque_timer"]
 position = Vector2( -0.5, 1 )
 shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="bloque_timer"]
+wait_time = 10.0
+one_shot = true
 
 [node name="bloque2" type="RigidBody2D" parent="."]
 position = Vector2( 281, 48 )
 gravity_scale = 0.0
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="bloque2"]
 texture = ExtResource( 2 )
