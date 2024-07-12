@@ -6,7 +6,9 @@
 
 Movimientos de un palno vidimencional para godot
 
-- estructuras de datos Estaticas
+- tiene una escena 
+- tiene scripts de moviemento
+- cuenta con bloques
 
 ## Requisitos
 
