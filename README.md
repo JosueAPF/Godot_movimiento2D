@@ -6,27 +6,11 @@
 
 Movimientos de un palno vidimencional para godot
 
-- tiene una escena 
-- tiene scripts de moviemento
-- cuenta con bloques
+- escena 
+- scripts de moviemento
+- bloques
 
-## Requisitos
 
-- Godot
 
-## Instalación
 
-Instrucciones para instalar el proyecto.
-
-## Uso
-
-Instrucciones sobre cómo usar el proyecto.
-
-## Contribuir
-
-Cómo pueden otros contribuir al proyecto.
-
-## Licencia
-
-Información sobre la licencia del proyecto.
 
